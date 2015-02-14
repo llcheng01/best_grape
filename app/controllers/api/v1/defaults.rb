@@ -25,7 +25,7 @@ module API
 
         # HTTP header based authentication
         before do
-          error!('Unauthorized', 401) unless headers['Authorization'] == "some token"
+          error!('Unauthorized', 401) unless headers['Authorization'] == "abc123"
         end
       end
     end
